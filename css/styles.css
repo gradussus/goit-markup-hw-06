@@ -410,7 +410,7 @@ img {
 	height: 44px;
 	border-radius: 50%;
 	fill: #afb1b8;
-	transition: color 250ms var(--main-cubic), background-color 250ms var(--main-cubic);
+	transition: color 250ms var(--main-cubic), background-color 250ms var(--main-cubic), fill 250ms var(--main-cubic);
 }
 .social-icon-link:hover,
 .social-icon-link:focus {
@@ -499,7 +499,7 @@ img {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	background-color: var(--accent-color);
 	height: 4px;
@@ -555,8 +555,9 @@ img {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
 	opacity: 1;
+	visibility: visible;
 	transform: scale(1.1);
-	transition: transform 250ms var(--main-cubic);
+	transition: transform 250ms var(--main-cubic), visibility 250ms var(--main-cubic), opacity 250ms var(--main-cubic);
 }
 .modal {
 	position: absolute;
