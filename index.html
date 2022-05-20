@@ -346,6 +346,28 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="modal-button" data-modal-close></button>
+				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+				<form name="signup-form">
+					<label class="modal-label">Имя
+						<input type="text">
+					</label>
+					<label class="modal-label">
+						Телефон
+						<input type="text" name="phone-number">
+					</label>
+					<label class="modal-label">
+						Почта
+						<input type="text" name="e-mail">
+					</label>
+					<label class="modal-label">
+						Комментарий
+						<input type="text" name="comment" placeholder="Введите текст">
+					</label>
+					<label>
+						<input type="checkbox" name="agreement">
+						Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+					</label>
+				</form>
 			</div>
 		</div>
 	</main>
@@ -402,7 +424,15 @@
 					</li>
 				</ul>
 			</div>
-			
+			<div class="subscribe-footer">
+				<h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+				<label class="subscribe-label">
+					<input class="subscribe-input" type="email" placeholder="E-mail">
+					<button class="submit-button" type="submit">Подписаться <svg class="subscribe-icon">
+						<use href="./images/icons.svg#subscribe"></use>
+					</svg></button>
+					</label>
+			</div>
 		</div>
 	</footer>
 	<script src="./js/modal.js"></script>
