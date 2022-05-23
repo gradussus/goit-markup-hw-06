@@ -641,4 +641,23 @@ img {
 }
 .modal-label {
 	display: block;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+}
+.modal-title {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primary-black);
+	margin-bottom: 12px;
+}
+.signup-form {
+	width: 448px;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
 }
