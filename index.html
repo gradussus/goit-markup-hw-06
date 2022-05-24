@@ -351,24 +351,40 @@
 				<button class="modal-button" data-modal-close></button>
 				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 				<form name="signup-form">
-					<div class="form-field"><label class="modal-label" for="name">Имя
-
-						</label><input type="text" id="name"></div>
+					<div class="form-field">
+						<label class="modal-label" for="name">Имя</label>
+						<input class="modal-input" type="text" name="name" id="name">
+						<svg class="modal-icon">
+							<use href="./images/icons.svg#person-modal">
+							</use>
+						</svg>
+					</div>
+					<!-- <label class="modal-label" for="name">Имя
+						<input class="modal-input" type="text" name="name" id="name">
+						<svg class="modal-icon">
+							<use href="./images/icons.svg#person-modal">
+							</use>
+						</svg>
+					</label> -->
 					<div class="form-field"><label class="modal-label" for="phone-number">
 							Телефон
 
-						</label><input type="text" name="phone-number"></div>
+						</label><input class="modal-input" type="text" name="phone-number" id="phone-number"><span><svg class="modal-icon">
+							<use href="./images/icons.svg#phone-modal"></use>
+						</svg></span></div>
 					<div class="form-field"><label class="modal-label" for="e-mail">
 							Почта
 
-						</label><input type="text" name="e-mail"></div>
+						</label><input class="modal-input" type="text" name="e-mail" id="e-mail"><span><svg class="modal-icon">
+							<use href="./images/icons.svg#email-modal"></use>
+						</svg></span></div>
 					<div class="form-field"><label class="modal-label" for="comment">
 							Комментарий
 
-						</label><input type="text" name="comment" placeholder="Введите текст"></div>
+						</label><input class="modal-input" type="text" name="comment" id="comment" placeholder="Введите текст"></div>
 
 					<label>
-						<input type="checkbox" name="agreement">
+						<input class="modal-input" type="checkbox" name="agreement">
 						Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
 					</label>
 				</form>
