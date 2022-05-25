@@ -349,28 +349,53 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="modal-button" data-modal-close></button>
+				<svg class="close-svg">
+					<use href="./images/close.svg"></use>
+				</svg>
 				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 				<form name="signup-form">
-					<div class="form-field"><label class="modal-label" for="name">Имя
+						<label class="modal-label" for="name">
+							Имя
+						</label>
+						<div class="modal-field">
+							<input class="modal-input" type="text" id="name">
+							<svg class="modal-icon">
+								<use href="./images/icons.svg#person-modal"></use>
+							</svg>
+						</div>
 
-						</label><input type="text" id="name"></div>
-					<div class="form-field"><label class="modal-label" for="phone-number">
+						<label class="modal-label" for="phone-number">
 							Телефон
+						</label>
+						<div class="modal-field">
+							<input class="modal-input" type="text" id="phone-number" name="phone-number">
+							<svg class="modal-icon">
+								<use href="./images/icons.svg#phone-modal"></use>
+							</svg>
+						</div>
 
-						</label><input type="text" name="phone-number"></div>
-					<div class="form-field"><label class="modal-label" for="e-mail">
+						<label class="modal-label" for="e-mail">
 							Почта
-
-						</label><input type="text" name="e-mail"></div>
-					<div class="form-field"><label class="modal-label" for="comment">
+						</label>
+						<div class="modal-field">
+							<input class="modal-input" type="text" id="e-mail" name="e-mail">
+							<svg class="modal-icon">
+								<use href="./images/icons.svg#email-modal"></use>
+							</svg>
+						</div>
+						
+					
+						<label class="modal-label" for="comment">
 							Комментарий
-
-						</label><input type="text" name="comment" placeholder="Введите текст"></div>
-
-					<label>
+						</label>
+						<textarea class="comment-field" name="comment" id="comment" cols="30" rows="7" placeholder="Введите текст"></textarea>
+					<label class="agreement">
 						<input type="checkbox" name="agreement">
 						Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
 					</label>
+					<button  class="submit-button" type="submit">
+						Отправить
+					</button>
 				</form>
 			</div>
 		</div>
