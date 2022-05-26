@@ -714,6 +714,8 @@ img {
 	border-radius: 4px;
 }
 .agreement {
+	display: flex;
+	align-items: center;
 	text-align: center;
 	margin-left: 12px;
 	margin-right: 12px;
@@ -735,4 +737,23 @@ img {
 	cursor: pointer;
 
 	background-color: var(--accent-color);
+}
+.modal-checkbox {
+	appearance: none;
+}
+.checkbox {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 7px;
+	border: 1.5px solid black;
+	border-radius: 2px;
+}
+.modal-checkbox:checked + .checkbox {
+	background-color: var(--accent-color);
+	background-image: url(../images/icons.svg#check-on);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	border-color: var(--accent-color);
 }
